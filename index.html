@@ -67,19 +67,20 @@
 </section>
 <!-- /HERO -->
 
-<!-- SECCIÓN B: Imagen izquierda, texto derecha -->
-<section class="section-spacing container mt-5">
-  <div class="row align-items-center">
-    <!-- Columna de imagen -->
-    <div class="col-lg-6 text-center mb-4 mb-lg-0">
-      <img src="https://imageplaceholder.net/500x400" class="img-fluid img-rounded" alt="Imagen ilustrativa">
+<!-- SECCIÓN B: Imagen PNG con fondo y responsive -->
+<section class="section-spacing d-flex align-items-center justify-content-center seccionb-fondo" style="background-color: #140936;">
+  <div class="position-relative w-100" style="max-width: 1200px;">
+
+    <!-- Imagen PNG contenedor -->
+    <img src="img/personaje-seccionb.png" alt="Contenedor Frikicaja" class="img-fluid w-100 seccionb-img">
+
+    <!-- Contenido posicionado sobre la parte derecha -->
+    <div class="position-absolute top-50 end-0 translate-middle-y text-white text-start px-5 seccionb-contenedor" style="width: 45%;">
+      <h2 class="h2-custom">¿Qué es FrikiCaja?</h2>
+      <p class="lead-custom">Es una entrega mensual de una caja misteriosa, con contenido exclusivo de tus sagas favoritas, que cambia y evoluciona como un <strong>Pokemón</strong>.</p>
+      <a href="#" class="btn btn-primary btn-frikicaja mt-3">Saber más</a>
     </div>
-    <!-- Columna de texto -->
-    <div class="col-lg-6">
-      <h2 class="display-5" class="h2-custom">¿Qué es FrikiCaja</h2>
-      <p class="lead-custom">Es una entrega mensual de una caja misteriosa, con contenido exclusivo de tus sagas favoritas, que cambia y evoluciona como un Pokemón:</p>
-      <a href="#" class="btn btn-primary mt-3">Saber más</a>
-    </div>
+
   </div>
 </section>
 
