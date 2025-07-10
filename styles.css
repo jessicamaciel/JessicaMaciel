@@ -235,6 +235,83 @@ img.rounded-circle {
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
 }
 
+.section-frase {
+  background-image: url('img/fondo-frase-central.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+  color: #fff; /* Asegura que el texto sea blanco */
+}
+
+.section-frase h2 {
+  font-size: 3rem;
+  line-height: 1.4;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.plan-destacado {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0,0,0,0.1); /* opcional: una sombra suave */
+  z-index: 2;
+  position: relative;
+}
+
+.bg-suscripcion {
+  background-image: url('img/cielo\ estrellado.jpg'); /* poné la ruta real */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-suscripcion {
+  background-color: #140936;
+  color: #ffffff;
+  border: none; /* opcional: saca el borde gris de Bootstrap */
+}
+
+.plan-destacado {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  background-color: #140936;
+  color: #fff;
+  border: 2px solid #7e3ff2; /* un violeta brillante */
+}
+
+.plan-destacado:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 50px rgba(126, 63, 242, 0.6); /* violeta glow */
+  border-color: #c084fc;
+}
+
+.btn-amarillo {
+  background-color: #FFE51F;
+  color: #140936;
+  border: none;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 10px 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-amarillo:hover {
+  background-color: #fff176; /* Amarillo más suave en hover */
+  color: #140936;
+  box-shadow: 0 0 10px rgba(255, 229, 31, 0.6);
+}
+
+.precio-amarillo {
+  color: #FFE51F;
+  font-weight: 700;
+}
+
 
 /* ============================== */
 /* CUSTOM HELPER CLASSES */
@@ -272,6 +349,7 @@ img.rounded-circle {
 }
 
 /* PÁRRAFOS Y TEXTOS */
+
 .p-custom {
   font-size: 1rem;
   color: white;
@@ -283,6 +361,7 @@ img.rounded-circle {
   font-weight: 400;
   color: white;
 }
+
 
 /* FONDOS E IMÁGENES */
 .bg-cover {
@@ -305,6 +384,10 @@ img.rounded-circle {
 .img-rounded {
   border-radius: 8px;
   overflow: hidden;
+}
+
+.bg-azulOscuro {
+background-color: #140936;
 }
 
 /* TEXTOS ADICIONALES */
