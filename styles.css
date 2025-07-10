@@ -11,6 +11,7 @@
 body {
   font-family: var(--font-family-base);
   color: #212529;
+  background-repeat: no-repeat;
   background-color: #ffffff;
   margin: 0;
   padding: 0;
@@ -29,6 +30,14 @@ body {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
 }
 
+.navbar.scrolled .nav-link {
+  color: #9000ff; /* o poné directamente un color como #000 */
+}
+
+.navbar.scrolled .nav-link:hover {
+  color: #333; /* o algo con más contraste si querés efecto */
+}
+
 .navbar-brand {
   font-weight: 600;
   font-size: 1.7rem;
@@ -36,11 +45,17 @@ body {
 }
 
 .nav-link {
-  color: var(--dark-color);
+  color: white;
   font-weight: 500;
   margin-left: 20px;
   transition: color 0.3s;
 }
+
+.nav-inicio {
+  color: #FFE51F;
+  font-weight: bold;
+}
+
 
 .nav-link:hover {
   color: var(--primary-color);
@@ -52,6 +67,7 @@ body {
   display: flex;
   align-items: center;
   padding-top: 100px;
+  background-image: url(img/fondo-hero.png)
 }
 
 h1, h2, h3, h4, h5 {
@@ -78,8 +94,18 @@ p {
   transition: all 0.3s ease-in-out;
 }
 
+.btn-light-custom {
+  background-color: #FFE51F;
+  border: none;
+}
+
+.btn-light-custom:hover {
+  background-color: #9000ff;
+}
+
+
 .btn-dark {
-  background-color: var(--primary-color);
+  background-color: #FFE51F;
   border: none;
 }
 
@@ -196,6 +222,7 @@ img.rounded-circle {
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
 }
 
+
 /* ============================== */
 /* CUSTOM HELPER CLASSES */
 /* ============================== */
@@ -209,7 +236,7 @@ img.rounded-circle {
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
-  color: var(--dark-color);
+  color: white;
 }
 
 .h2-custom {
@@ -235,7 +262,7 @@ img.rounded-circle {
 /* PÁRRAFOS Y TEXTOS */
 .p-custom {
   font-size: 1rem;
-  color: var(--secondary-color);
+  color: white;
   line-height: 1.6;
 }
 
