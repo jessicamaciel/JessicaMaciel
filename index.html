@@ -45,7 +45,7 @@
 <!-- /NAVBAR -->
 
 <!-- HERO con fondo e imagen flotante -->
-<section class="section-spacing bg-cover bg-overlay-dark d-flex align-items-center text-white" style="background-image: url('img/fondo-hero.png'); min-height: 100vh;">
+<section class="section-spacing bg-cover bg-overlay-dark d-flex align-items-center text-white" style="background-image: url('img/hero-fondo-opcional.png'); min-height: 100vh;">
   <div class="container">
     <div class="row align-items-center">
       <!-- Texto principal-->
@@ -60,51 +60,63 @@
 
       <!-- Imagen superpuesta -->
       <div class="col-lg-7 text-center mt-5 mt-lg-0">
-        <img src="img/composición hero.png" alt="Personaje Hero" class="img-fluid" style="max-height: 500px;">
+        <img src="" alt="" class="img-fluid" style="max-height: 500px;">
       </div>
     </div>
   </div>
 </section>
 <!-- /HERO -->
 
-<!-- SECCIÓN B: Imagen PNG con fondo y responsive -->
-<section class="section-spacing d-flex align-items-center justify-content-center seccionb-fondo" style="background-color: #140936;">
-  <div class="position-relative w-100" style="max-width: 1200px;">
-
-    <!-- Imagen PNG contenedor -->
-    <img src="img/personaje-seccionb.png" alt="Contenedor Frikicaja" class="img-fluid w-100 seccionb-img">
-
-    <!-- Contenido posicionado sobre la parte derecha -->
-    <div class="position-absolute top-50 end-0 translate-middle-y text-white text-start px-5 seccionb-contenedor" style="width: 45%;">
-      <h2 class="h2-custom">¿Qué es FrikiCaja?</h2>
-      <p class="lead-custom">Es una entrega mensual de una caja misteriosa, con contenido exclusivo de tus sagas favoritas, que cambia y evoluciona como un <strong>Pokemón</strong>.</p>
-      <a href="#" class="btn btn-primary btn-frikicaja mt-3">Saber más</a>
-    </div>
-
-  </div>
-</section>
-
-<!-- SECCIÓN E: Beneficios con íconos centrados -->
-<section class="section-spacing text-center py-5 bg-azulOscuro">
+<!-- SECCIÓN B: Imagen izquierda, texto derecha -->
+<section class="section-spacing mb-6" style="background-color: #140936;">
   <div class="container">
+    <div class="row align-items-center">
+      <!-- Columna de imagen -->
+      <div class="col-lg-5 text-center mb-4">
+        <img src="img/caja-animada.png" class="img-fluid img-rounded" style="max-width: 70%;" alt="Imagen de caja animada">
+      </div>
+      <!-- Columna de texto -->
+      <div class="col-lg-7 text-white mb-5">
+        <h2 class="h2-custom">¿Qué es FrikiCaja?</h2>
+        <p class="lead-custom">Es una entrega mensual de una caja misteriosa, con contenido exclusivo de tus sagas favoritas, que cambia y evoluciona como un Pokemón:</p>
+        <ul class="list-unstyled">
+          <li class="mb-2"><i class="bi bi-check me-2"></i>Figuras exclusivas</li>
+          <li class="mb-2"><i class="bi bi-check me-2"></i>Comics & Mangas de edición limitada</li>
+          <li class="mb-2"><i class="bi bi-check me-2"></i>Merchandising oficial</li>
+          <li class="mb-2"><i class="bi bi-check me-2"></i>Y mucho más</li>
+        </ul>
+        <p class="lead-custom">Cada mes, preparamos cuidadosamente tu frikicaja y te la llevamos a la puerta de tu casa.</p>
+      </div>
+    </div>
+  </div>
+
+<!-- SECCIÓN E: Beneficios con íconos centrados en 2x2 -->
+<section class="text-center bg-azulOscuro d-flex align-items-center" style="min-height: 80vh;">
+  <div class="container py-5">
     <div class="row">
       <!-- Beneficio 1 -->
-      <div class="col-md-4 mb-4">
-        <i class="bi bi-truck fs-1 mb-3" style=color:#FFE51F></i>
+      <div class="col-md-6 col-lg-3 mb-4">
+        <i class="bi bi-truck fs-1 mb-3" style="color:#FFE51F;"></i>
         <h5 class="text-white">Entrega Mensual</h5>
         <p class="p-custom">El 5to día hábil de cada mes.</p>
       </div>
       <!-- Beneficio 2 -->
-      <div class="col-md-4 mb-4">
-        <i class="bi bi-box-seam fs-1 mb-3" style=color:#FFE51F></i>
+      <div class="col-md-6 col-lg-3 mb-4">
+        <i class="bi bi-box-seam fs-1 mb-3" style="color:#FFE51F;"></i>
         <h5 class="text-white">Envío Gratis</h5>
         <p class="p-custom">En C.A.B.A.</p>
       </div>
       <!-- Beneficio 3 -->
-      <div class="col-md-4 mb-4">
-        <i class="bi bi-shield-check fs-1 mb-3" style=color:#FFE51F></i>
-        <h5 class="text-white">Merchandising Oficial</h5>
+      <div class="col-md-6 col-lg-3 mb-4">
+        <i class="bi bi-shield-check fs-1 mb-3" style="color:#FFE51F;"></i>
+        <h5 class="text-white">Merch Oficial</h5>
         <p class="p-custom">Productos 100% originales</p>
+      </div>
+      <!-- Beneficio 4 -->
+      <div class="col-md-6 col-lg-3 mb-4">
+        <i class="bi bi-gift-fill fs-1 mb-3" style="color:#FFE51F;"></i>
+        <h5 class="text-white">Sorpresa Extra</h5>
+        <p class="p-custom">Siempre te damos algo más...</p>
       </div>
     </div>
   </div>
@@ -180,7 +192,7 @@
         </ul>
 
         <!-- Botón CTA -->
-        <a href="#" class="btn btn-amarillo mt-3">Elegir plan</a>
+        <a href="detalle.html" class="btn btn-amarillo mt-3">Elegir plan</a>
       </div>
     </div>
 
@@ -227,40 +239,32 @@
     </div>
     <!-- Columna de imagen -->
     <div class="col-lg-6 text-center mt-4 mt-lg-0">
-      <img src="https://imageplaceholder.net/500x400" class="img-fluid img-rounded" alt="Imagen ilustrativa">
+      <img src="img/intercambio.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
     </div>
   </div>
 </section>
 
-<!-- TESTIMONIALS: Opiniones de clientes -->
-<section class="section-spacing container text-center">
-  <h2 class="h2-custom">Testimonios</h2>
-  <p class="p-custom">Comentarios reales de usuarios para generar confianza.</p>
-  <div class="row">
-    <!-- Cada columna es un testimonio -->
-    <div class="col-md-4">
-      <blockquote class="blockquote p-4">
-        “Comentario de cliente.”
-        <footer class="blockquote-footer mt-3">Cliente 1</footer>
-      </blockquote>
-    </div>
-    <!-- Cada columna es un testimonio -->
-    <div class="col-md-4">
-      <blockquote class="blockquote p-4">
-        “Comentario de cliente.”
-        <footer class="blockquote-footer mt-3">Cliente 1</footer>
-      </blockquote>
-    </div>
-    <!-- Cada columna es un testimonio -->
-    <div class="col-md-4">
-      <blockquote class="blockquote p-4">
-        “Comentario de cliente.”
-        <footer class="blockquote-footer mt-3">Cliente 1</footer>
-      </blockquote>
+<!-- TESTIMONIOS: 4 fotos -->
+<section class="section-spacing container-fluid text-center" style="background-color: #DDDDDD;">
+  <div class="container">
+    <h2 class="display-5 fw-bold">Testimonios</h2>
+    <p class="p-custom">Nuestros fans lo dicen mejor que nadie.</p>
+    <div class="row justify-content-center mt-4">
+      <div class="col-6 col-md-3 mb-4">
+        <img src="img/testimonio-1.png" alt="Cliente 1" class="img-fluid">
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <img src="img/testimonio-2.png" alt="Cliente 2" class="img-fluid">
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <img src="img/testimonio-3.png" alt="Cliente 3" class="img-fluid">
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <img src="img/testimonio-4.png" alt="Cliente 4" class="img-fluid">
+      </div>
     </div>
   </div>
 </section>
-<!-- /TESTIMONIALS -->
 
 <!-- FAQS: Preguntas frecuentes -->
 <section class="section-spacing container text-center">
@@ -343,39 +347,58 @@
 </section>
 <!-- /FAQS -->
 
-<!-- GALERÍA C: Carrusel horizontal con tarjetas -->
-<section class="section-spacing container py-5 text-center">
-  <h2 class="mb-4" class="h2-custom">Nuestros Sponsors</h2>
-  <div id="carouselGaleriaC" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="d-flex justify-content-center gap-3">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 1">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 2">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 3">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 4">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 5">
-        </div>
-      </div>
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="d-flex justify-content-center gap-3">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 6">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 7">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 8">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 9">
-          <img src="https://imageplaceholder.net/200x300" class="rounded" alt="Item 10">
-        </div>
+<!-- SPONSORS AUTOSCROLL -->
+<section class="section-spacing container-fluid py-5 text-center" style="background-color: #F8F9FA;">
+  <div class="container">
+    <h2 class="h2-custom mb-4">Nuestros Sponsors</h2>
+
+    <div class="scroll-track overflow-hidden position-relative">
+      <div class="scroll-content d-flex align-items-center gap-5">
+      <img src="img/frames-03.svg" alt="Sponsor 1" class="sponsor-logo flex-shrink-0">
+      <img src="img/frames-04.svg" alt="Sponsor 2" class="sponsor-logo flex-shrink-0">
+      <img src="img/frames-05.svg" alt="Sponsor 3" class="sponsor-logo flex-shrink-0">
+      <img src="img/frames-06.svg" alt="Sponsor 4" class="sponsor-logo flex-shrink-0">
+      <img src="img/frames-07.svg" alt="Sponsor 5" class="sponsor-logo flex-shrink-0">
+      <img src="img/frames-08.svg" alt="Sponsor 6" class="sponsor-logo flex-shrink-0">
+      <img src="img/frames-09.svg" alt="Sponsor 7" class="sponsor-logo flex-shrink-0">
+      <img src="img/frames-10.svg" alt="Sponsor 8" class="sponsor-logo flex-shrink-0">
+      <img src="img/frames-11.svg" alt="Sponsor 9" class="sponsor-logo flex-shrink-0">
+      <img src="img/frames-12.svg" alt="Sponsor 10" class="sponsor-logo flex-shrink-0">
+        <!-- duplicamos para que no corte en seco -->
+        <img src="img/frames-03.svg" alt="Sponsor 1" class="sponsor-logo flex-shrink-0">
+        <img src="img/frames-04.svg" alt="Sponsor 2" class="sponsor-logo flex-shrink-0">
+        <img src="img/frames-05.svg" alt="Sponsor 3" class="sponsor-logo flex-shrink-0">
+        <img src="img/frames-06.svg" alt="Sponsor 4" class="sponsor-logo flex-shrink-0">
+        <img src="img/frames-07.svg" alt="Sponsor 5" class="sponsor-logo flex-shrink-0">
+        <img src="img/frames-08.svg" alt="Sponsor 6" class="sponsor-logo flex-shrink-0">
+        <img src="img/frames-09.svg" alt="Sponsor 7" class="sponsor-logo flex-shrink-0">
+        <img src="img/frames-10.svg" alt="Sponsor 8" class="sponsor-logo flex-shrink-0">
+        <img src="img/frames-11.svg" alt="Sponsor 9" class="sponsor-logo flex-shrink-0">
+        <img src="img/frames-12.svg" alt="Sponsor 10" class="sponsor-logo flex-shrink-0">
+
+        <img src="img/frames-03.svg" alt="Sponsor 1" class="sponsor-logo flex-shrink-0">
+        <img src="img/frames-04.svg" alt="Sponsor 2" class="sponsor-logo flex-shrink-0">
+        <img src="img/frames-05.svg" alt="Sponsor 3" class="sponsor-logo flex-shrink-0">
+        <img src="img/frames-06.svg" alt="Sponsor 4" class="sponsor-logo flex-shrink-0">
+        <img src="img/frames-07.svg" alt="Sponsor 5" class="sponsor-logo flex-shrink-0">
+        <img src="img/frames-08.svg" alt="Sponsor 6" class="sponsor-logo flex-shrink-0">
+        <img src="img/frames-09.svg" alt="Sponsor 7" class="sponsor-logo flex-shrink-0">
+        <img src="img/frames-10.svg" alt="Sponsor 8" class="sponsor-logo flex-shrink-0">
+        <img src="img/frames-11.svg" alt="Sponsor 9" class="sponsor-logo flex-shrink-0">
+        <img src="img/frames-12.svg" alt="Sponsor 10" class="sponsor-logo flex-shrink-0">
+
+        <img src="img/frames-03.svg" alt="Sponsor 1" class="sponsor-logo flex-shrink-0">
+        <img src="img/frames-04.svg" alt="Sponsor 2" class="sponsor-logo flex-shrink-0">
+        <img src="img/frames-05.svg" alt="Sponsor 3" class="sponsor-logo flex-shrink-0">
+        <img src="img/frames-06.svg" alt="Sponsor 4" class="sponsor-logo flex-shrink-0">
+        <img src="img/frames-07.svg" alt="Sponsor 5" class="sponsor-logo flex-shrink-0">
+        <img src="img/frames-08.svg" alt="Sponsor 6" class="sponsor-logo flex-shrink-0">
+        <img src="img/frames-09.svg" alt="Sponsor 7" class="sponsor-logo flex-shrink-0">
+        <img src="img/frames-10.svg" alt="Sponsor 8" class="sponsor-logo flex-shrink-0">
+        <img src="img/frames-11.svg" alt="Sponsor 9" class="sponsor-logo flex-shrink-0">
+        <img src="img/frames-12.svg" alt="Sponsor 10" class="sponsor-logo flex-shrink-0">
       </div>
     </div>
-    <!-- Controles -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleriaC" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleriaC" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
   </div>
 </section>
 
@@ -402,15 +425,46 @@
 </section>
 <!-- /CONTACT FORM -->
 
-<!-- FOOTER: Pie de página -->
-<footer class="text-center py-4">
+<!-- FOOTER -->
+<footer class="text-white py-5" style="background-color: #140936;">
   <div class="container">
-    <p class="p-custom">© 2025 Belluccia 3 - Visible Template. Todos los derechos reservados.</p>
+    <div class="row text-center text-md-start">
+      
+      <!-- Marca o logo -->
+      <div class="col-md-4 mb-4 mb-md-0">
+        <h5 class="text-uppercase fw-bold">Caja Ancestral</h5>
+        <p class="p-custom">Una experiencia geek mensual que llega a tu puerta.</p>
+      </div>
+      
+      <!-- Navegación -->
+      <div class="col-md-4 mb-4 mb-md-0">
+        <h6 class="fw-bold">Navegación</h6>
+        <ul class="list-unstyled">
+          <li><a href="#inicio" class="text-white text-decoration-none">Inicio</a></li>
+          <li><a href="#planes" class="text-white text-decoration-none">Planes</a></li>
+          <li><a href="#contacto" class="text-white text-decoration-none">Contacto</a></li>
+        </ul>
+      </div>
+      
+      <!-- Redes sociales -->
+      <div class="col-md-4">
+        <h6 class="fw-bold">Seguinos</h6>
+        <a href="#" class="text-white me-3 fs-5"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white me-3 fs-5"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="text-white me-3 fs-5"><i class="bi bi-tiktok"></i></a>
+        <a href="#" class="text-white fs-5"><i class="bi bi-youtube"></i></a>
+      </div>
+
+    </div>
+
+    <!-- Línea inferior -->
+    <hr class="my-4 border-white opacity-25">
+
+    <div class="text-center small">
+      <p class="p-custom mb-0">© 2025 FrikiCaja - Belluccia 3 · Todos los derechos reservados.</p>
+    </div>
   </div>
 </footer>
-<!-- /FOOTER -->
-
-
 
 <!-- Bootstrap Bundle JS (incluye Popper) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>

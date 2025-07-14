@@ -312,6 +312,13 @@ img.rounded-circle {
   font-weight: 700;
 }
 
+.bg-light-grey {
+  background-color: #DDDDDD;
+}
+
+.text-shadow-dark {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
 
 /* ============================== */
 /* CUSTOM HELPER CLASSES */
@@ -415,6 +422,91 @@ background-color: #140936;
   padding-bottom: 50px;
 }
 
+.section-spacing-xl {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.mb-6 {
+  margin-bottom: 6rem;
+}
+.mt-6 {
+  margin-top: 6rem;
+}
+
+.sponsor-logo {
+  height: 120px;
+  max-width: 250x;
+  object-fit: contain;
+}
+
+.scroll-track {
+  height: 150px;
+  overflow: hidden;
+}
+
+.scroll-content {
+  animation: scroll-left 60s linear infinite;
+  width: max-content;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-33.3333%); }
+}
+
+.sponsor-logo {
+  height: 120px;
+  max-width: 250px;
+  object-fit: contain;
+}
+
+/*PAGINA DETALLE */
+
+.detalle-caja-ancestral {
+  max-width: 1200px;
+  margin: auto;
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.bloque {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+}
+
+.bloque:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.texto {
+  flex: 1;
+}
+
+.texto h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.texto p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.imagen {
+  flex: 1;
+  text-align: center;
+}
+
+.imagen img {
+  max-width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 0 30px rgba(0,0,0,0.2);
+}
 
 /* ============================== */
 /* MEDIA QUERIES */
